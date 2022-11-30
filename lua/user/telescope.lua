@@ -17,7 +17,9 @@ keymap('n', '<leader>f', builtin.find_files, {})
 keymap('n', '<leader>r', builtin.live_grep, {})
 keymap('n', '<leader>b', builtin.buffers, {})
 keymap('n', '<leader>h', builtin.help_tags, {})
-
+keymap("n", "<leader>nm", function() builtin.find_files({ no_ignore = true }) end, opts)
+keymap("n", "<leader>tb", builtin.builtin, opts)
+  
 telescope.setup {
   defaults = {
     mappings = {

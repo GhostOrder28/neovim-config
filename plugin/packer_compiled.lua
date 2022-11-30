@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/lspkind.nvim",
     url = "https://github.com/onsails/lspkind.nvim"
   },
+  ["lualine.nvim"] = {
+    loaded = true,
+    path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/lualine.nvim",
+    url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
   ["luasnip.nvim"] = {
     loaded = true,
     path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/luasnip.nvim",
@@ -153,6 +158,26 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-dap-go"] = {
+    loaded = true,
+    path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    url = "https://github.com/leoluz/nvim-dap-go"
+  },
+  ["nvim-dap-ui"] = {
+    loaded = true,
+    path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/nvim-dap-ui",
+    url = "https://github.com/rcarriga/nvim-dap-ui"
+  },
+  ["nvim-dap-virtual-text"] = {
+    loaded = true,
+    path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/nvim-dap-virtual-text",
+    url = "https://github.com/theHamsta/nvim-dap-virtual-text"
   },
   ["nvim-lspconfig"] = {
     loaded = true,
@@ -193,6 +218,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
+  },
+  ["telescope-dap.nvim"] = {
+    loaded = true,
+    path = "/home/ghost-order/.local/share/nvim/site/pack/packer/start/telescope-dap.nvim",
+    url = "https://github.com/nvim-telescope/telescope-dap.nvim"
   },
   ["telescope-fzf-native.nvim"] = {
     loaded = true,

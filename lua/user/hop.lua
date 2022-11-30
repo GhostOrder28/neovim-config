@@ -8,4 +8,4 @@ hop.setup {}
 
 keymap("n", "s", ":HopChar1<cr>", opts)
 keymap("n", "S", ":HopChar2<cr>", opts)
-keymap("n", "f", ":HopPattern<cr>", opts)
+-- keymap("n", "f", ":HopPattern<cr>", opts)

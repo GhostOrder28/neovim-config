@@ -53,6 +53,7 @@ ls.config.set_config {
 ls.filetype_extend('typescriptreact', { 'javascript', 'javascriptreact', 'html' })
 ls.filetype_extend('javascriptreact', { 'javascript', 'html' })
 ls.filetype_extend('typescript', { 'javascript' })
+ls.filetype_extend('vue', { 'javascript', 'html' })
 
 local format_fn = function(file, source_name)
   if source_name == "lua" then return nil
@@ -74,7 +75,7 @@ end)
 
 keymap('i', '<c-l>', function ()
   if ls.choice_active() then
-    ls.change.choice(1)
+    ls.change_choice(1)
   end
 end)
 

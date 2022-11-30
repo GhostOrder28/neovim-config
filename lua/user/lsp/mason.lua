@@ -30,6 +30,9 @@ local servers = {
   "tsserver",
   "yamlls",
   "bashls",
+  "graphql",
+  "volar",
+  "pyright",
 }
 
 local settings = {
@@ -50,7 +53,20 @@ mason_lspconfig.setup {
   ensure_installed = servers,
   automatic_installation = true,
 }
+
+
 for _, lsp in pairs(servers) do
+
+  if lspconfig[lsp] == 'graphql' then
+    print(vim.inspect('is graphql!'))
+    lspconfig[lsp].setup {
+      on_attach = on_attach,
+      capabilities = capabilities,
+      filetypes = { 'graphql', 'javascript' }
+    }
+    break
+  end
+
   lspconfig[lsp].setup {
     on_attach = on_attach,
     capabilities = capabilities,

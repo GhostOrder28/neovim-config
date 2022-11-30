@@ -11,7 +11,9 @@ configs.setup {
     'python', 
     'css',
     'json',
-    'markdown'
+    'markdown',
+    'vue',
+    'python'
   },
   sync_install = false,
   auto_install = true,
@@ -27,6 +29,15 @@ configs.setup {
   context_commentstring = {
     enable = true,
     enable_autocmd = false,
+    config = {
+      javascript = {
+        __default = '// %s',
+        jsx_element = '{/* %s */}',
+        jsx_fragment = '{/* %s */}',
+        jsx_attribute = '// %s',
+        comment = '// %s'
+      }
+    }
   }
 }
 

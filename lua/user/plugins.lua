@@ -50,7 +50,6 @@ return packer.startup(function(use)
 		use 'folke/tokyonight.nvim'
 		use 'numToStr/Comment.nvim'
     use 'JoosepAlviste/nvim-ts-context-commentstring'
-		use 'neovim/nvim-lspconfig'
     use 'sar/luasnip.nvim'
     use 'kylechui/nvim-surround'
     use 'windwp/nvim-autopairs'
@@ -64,9 +63,15 @@ return packer.startup(function(use)
     use 'hrsh7th/cmp-path'
 		use 'hrsh7th/cmp-cmdline'
     use 'hrsh7th/cmp-nvim-lua'
-		use 'hrsh7th/cmp-nvim-lsp'
     use 'saadparwaiz1/cmp_luasnip'
     use 'hrsh7th/cmp-nvim-lsp'
+
+    -- debugging
+    use 'mfussenegger/nvim-dap'
+    use 'leoluz/nvim-dap-go'
+    use 'rcarriga/nvim-dap-ui'
+    use 'theHamsta/nvim-dap-virtual-text'
+    use 'nvim-telescope/telescope-dap.nvim'
 
     -- lsp
     use "williamboman/mason.nvim"
@@ -96,9 +101,11 @@ return packer.startup(function(use)
     }
     use {
       'nvim-tree/nvim-tree.lua',
-      requires = {
-        'nvim-tree/nvim-web-devicons'
-      }
+      requires = { 'nvim-tree/nvim-web-devicons' }
+    }
+    use {
+      'nvim-lualine/lualine.nvim',
+      requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
 
     if PACKER_BOOTSTRAP then

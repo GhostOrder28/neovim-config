@@ -15,4 +15,5 @@ keymap("n", "<leader>a", ":NvimTreeToggle<CR>", opts)         -- toogle nvim-tre
 keymap("n", "<leader>d", ":NvimTreeFindFile<CR>", opts)       -- focus current buffer in nvim-tree
 keymap("n", "<tab>", "<C-W>w", opts)                          -- alternate between splits
 keymap("n", "`", "<C-^>", opts)                               -- alternte between buffers
-keymap("n", "ss", "viw", opts)                                -- highlight current word
+keymap("n", "<C-h>", ":vertical resize -10 <CR>", opts)
+keymap("n", "<C-l>", ":vertical resize +10 <CR>", opts)

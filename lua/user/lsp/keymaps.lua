@@ -35,6 +35,8 @@ local on_attach = function(client, bufnr)
 
   -- diagnostics
   keymap('n', '<leader>x', diag.open_float, bufopts)
+  keymap("n", "g]", diag.goto_next, opts)
+  keymap("n", "g[", diag.goto_prev, opts)
 end
 
 return on_attach
